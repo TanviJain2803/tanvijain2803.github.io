@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvi Jain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #004999;
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+        }
+
+        .experience-item, .education-item, .publication-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-item:last-child, .education-item:last-child, .publication-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #1a1a1a;
+        }
+
+        .item-date {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
+        .item-organization {
+            color: #0066cc;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .item-details {
+            color: #555;
+            margin-left: 0;
+        }
+
+        .item-details ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .item-details li {
+            margin-bottom: 8px;
+        }
+
+        .item-details ul ul {
+            margin-top: 5px;
+        }
+
+        .gpa {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        .award-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .award-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .award-title {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .award-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .course-item {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .publication-authors {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+
+        .publication-venue {
+            color: #0066cc;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .item-date {
+                margin-top: 5px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tanvi Jain</h1>
+            <p class="subtitle">Computational Biologist | Single-Cell & Spatial Genomics</p>
+            <div class="contact-links">
+                <a href="mailto:tanvi.jain2803@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/tanvi-jain" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/tanvi-jain" target="_blank">💻 GitHub</a>
+                <span>📱 (858) 910-6778</span>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Computational Associate at the Broad Institute of MIT and Harvard, specializing in multi-modal single-cell and spatial transcriptomics analysis. My work focuses on understanding complex immune responses in diseases like atopic dermatitis, IBD, and glioblastoma through advanced computational methods.</p>
+            <p style="margin-top: 15px;">With a background in bioinformatics and biology from UC San Diego, I develop analytical pipelines and visualization tools to extract biological insights from high-dimensional genomic data.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Science in Biology</span>
+                    <span class="item-date">August 2021 – June 2024</span>
+                </div>
+                <div class="item-organization">University of California, San Diego</div>
+                <div class="gpa">Specialization in Bioinformatics | GPA: 3.93 | Cum Laude Honors</div>
+            </div>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">International Baccalaureate Diploma Programme</span>
+                    <span class="item-date">2019 - 2021</span>
+                </div>
+                <div class="item-organization">Pathways World School Aravali, India</div>
+                <div class="gpa">GPA: 43/45 | High Levels: Biology, Chemistry, Math</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Research Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Computational Associate</span>
+                    <span class="item-date">July 2024 - Present</span>
+                </div>
+                <div class="item-organization">Xavier Lab | Klarman Cell Observatory, The Broad Institute of MIT and Harvard</div>
+                <div class="item-details">
+                    <ul>
+                        <li><strong>Multi-modal single cell skin atlas for atopic dermatitis:</strong> Building gene target discovery platform in collaboration with Dr. Aviv Regev and Dr. Gökcen Eraslan at Genentech
+                            <ul>
+                                <li>Integration of TCR-seq and scRNA-seq data via topic modelling to characterize pro-inflammatory IL13/IL22/IL26 expressing T cell clones in lesional AD skin</li>
+                                <li>Performed DC trajectory analysis to characterize mmDCs enriched in lesional AD skin</li>
+                                <li>Lead computational analyst; published in Nature Communications as co-first author</li>
+                            </ul>
+                        </li>
+                        <li><strong>Spatial omics and single-cell applications to IBD:</strong>
+                            <ul>
+                                <li>Advanced multi-omic analysis in spatial transcriptomics (CosMx & VisiumHD) to identify gene signatures for early detection of colorectal cancer</li>
+                                <li>Cell segmentation, spatially varying gene analysis, cell neighborhood characterization, cell-cell communication, & topic modelling</li>
+                                <li>Actively involved in R01 grant writing, data analysis and visualization</li>
+                                <li>Analyzed performance metrics across Visium, VisiumHD, Xenium 1k and Xenium 480 panels</li>
+                            </ul>
+                        </li>
+                        <li><strong>Glioblastoma immunotherapy:</strong> Identifying therapeutic targets in T-cells for immune checkpoint blockade therapy (collaboration with Drs. Ana Anderson & Mario Suva at Harvard Medical School)</li>
+                        <li><strong>Beige fat biogenesis:</strong> RNA trajectory analysis in snRNA seq data to find genes that induce beige fat biogenesis (collaboration with Dr. Kenya Honda at Keio University School of Medicine, Japan)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Lab Technician</span>
+                    <span class="item-date">Feb 2022 - June 2024</span>
+                </div>
+                <div class="item-organization">Ecker Lab | Salk Institute of Biological Sciences</div>
+                <div class="item-details">
+                    <ul>
+                        <li>Developed ~2M single cell atlas for ~800 Arabidopsis thaliana varieties</li>
+                        <li>Built large data analysis and visualization pipelines in R, Unix, Python, Snakemake on HPC</li>
+                        <li>Conducted wet lab scRNA seq assay library prep</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Summer Intern | SenNet Consortium Undergraduate Student Programme</span>
+                    <span class="item-date">June 2023 - Aug 2023</span>
+                </div>
+                <div class="item-organization">National Institute of Health (NIH) and Duke School of Medicine, North Carolina</div>
+                <div class="item-details">
+                    <ul>
+                        <li>Implemented SPADE in Python (published in Flowkit package) - a visualization and analysis tool for high-dimensional flow cytometry data</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="publication-item">
+                <div class="publication-authors">Evgenij Fiskin*, Gökcen Eraslan*, Maria Alora-Palli*, <strong>Tanvi Jain*</strong>, et al.</div>
+                <div class="item-title">Multi-modal skin atlas identifies a multicellular immune-stromal community associated with altered cornification and specific T cell expansion in atopic dermatitis.</div>
+                <div class="publication-venue">Nature Communications, In review. * co-first author publication</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-authors">Kai Liu, Anders Rasmussen, Wenkai Han, Qiyu Gong, Seneca Bohley, <strong>Tanvi Jain</strong>, et al.</div>
+                <div class="item-title">Sensitive transcriptomics and genotyping reveals function of genetic variants in immunity.</div>
+                <div class="publication-venue">Nature Genetics, In review.</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-authors">Kenya Honda, Takeshi Tanoue, Manabu Nagayama, Ayumi Roochana, Samuel Zimmerman, Orr Ashenberg, <strong>Tanvi Jain</strong>, et al.</div>
+                <div class="item-title">Identification of specific microbiota members that induce beige fat biogenesis in response to dietary cues.</div>
+                <div class="publication-venue">Nature Portfolio, In review.</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-authors">Joseph Swift, Xuelin Wu, Jiaying Xu, <strong>Tanvi Jain</strong>, et al.</div>
+                <div class="item-title">Stress drives plasticity in leaf maturation transcriptional dynamics.</div>
+                <div class="publication-venue">Nature Plants, In review.</div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Honors & Awards</h2>
+            
+            <div class="award-item">
+                <span class="award-title">People's Choice Award BroadHacks, Broad Institute</span>
+                <span class="award-date">June 2025</span>
+                <div style="margin-top: 5px; color: #666; font-size: 0.9em;">Project: Zero-shot evaluation of 3 recent pathology foundation models at the patch-level gene expression prediction task</div>
+            </div>
+
+            <div class="award-item">
+                <span class="award-title">Spot Award, Broad Institute</span>
+                <span class="award-date">March 2025</span>
+            </div>
+
+            <div class="award-item">
+                <span class="award-title">SenNet CUSP $8,000, National Institute of Health</span>
+                <span class="award-date">June 2023 - Aug 2023</span>
+            </div>
+        </section>
+
+        <section id="volunteer">
+            <h2>Leadership & Volunteer Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Models, Inference, and Algorithms (MIA) Steering Committee</span>
+                    <span class="item-date">Feb 2025 - Present</span>
+                </div>
+                <div class="item-organization">Broad Institute of MIT and Harvard</div>
+                <div class="item-details">
+                    <ul>
+                        <li>Organized and Lead Volunteer for Dr. Gary Nolan's Primer and Talk (Sept 2025)</li>
+                        <li>Actively networked with MIA speakers to stay updated with paradigm shifts and innovations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Nucleate Leadership</span>
+                    <span class="item-date">2023 - Present</span>
+                </div>
+                <div class="item-organization">Nucleate Headquarters | Boston, MA and San Diego, CA</div>
+                <div class="item-details">
+                    <ul>
+                        <li>Active role in communications summit planning team (Aug 2025): lead for media coverage, content creation (Instagram, LinkedIn), and website development</li>
+                        <li>Lead Student Engagement at UC San Diego and Activator program Leadership in San Diego chapter</li>
+                        <li>Organized 2024 Activator cohort mentorship workshops and built partnerships with organizations at UC San Diego</li>
+                        <li>Networked with 100+ biotech professionals and interviewed high profile biotech personalities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="coursework">
+            <h2>Additional Training</h2>
+            <div class="item-organization">Deep Learning Specialization by Andrew Ng - Coursera</div>
+            <div class="course-list">
+                <div class="course-item">• Neural Networks and Deep Learning</div>
+                <div class="course-item">• Structuring Machine Learning Projects</div>
+                <div class="course-item">• Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Tanvi Jain. Built with passion for computational biology.</p>
+        </footer>
+    </div>
+</body>
+</html>
